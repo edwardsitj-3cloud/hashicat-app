@@ -1,0 +1,16 @@
+name: 3Cloud/DevSecOps%20SRE%20Community%20Sandbox
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+#     # This item has no matching transformer
+#     - task: FileTransform@1
+#       displayName: Replace variables in appsettings.json
+#       inputs:
+#         folderPath: "${{ github.workspace }}"
+#         fileType: json
+#         targetFiles: Backend/Payroll/Payroll/appsettings.json
